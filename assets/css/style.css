@@ -1,29 +1,38 @@
-/*.jumbotron {
-	background-color: rgba(102,173,80,0.35);
-	color: black;
-	text-shadow: 6px 3px 6px rgba(0,0,0,0.40);
-}*/
-
+@font-face {
+    font-family: "FinalFantasyFont";
+    src: url("../fonts/FinalFantasyFont.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+}
 
 [disabled=disabled]:hover {
 	cursor: not-allowed;
 }
 
-
 .finalFantasyDialogBox {
 
 	color: white;
+	font-family: "FinalFantasyFont";
+	font-size: 1.25em;
+
+	/*Border*/
 	border-radius: 10px;
 	border-color: white;
 	border-style: solid;
 	border-width: 4px;
 
+	/*Box Shadow*/
+	box-shadow: 2px 2px 50px 4px rgba(0,0,0,0.45);
+	-webkit-box-shadow: 2px 2px 50px 4px rgba(0,0,0,0.45);
+	-moz-box-shadow: 2px 2px 50px 4px rgba(0,0,0,0.45);
+
+	/*Padding*/
 	padding-top: 15px;
 	padding-bottom: 15px;
 	padding-left: 15px;
 	padding-right: 15px;
 
-	/*Gradient Styling*/
+	/*Gradient Fill*/
 	background: rgb(2,5,204);
 	background: -moz-linear-gradient(top, rgba(2,5,204,1) 0%, rgba(10,64,214,1) 0%, rgba(3,22,109,1) 100%);
 	background: -webkit-linear-gradient(top, rgba(2,5,204,1) 0%,rgba(10,64,214,1) 0%,rgba(3,22,109,1) 100%);
@@ -32,4 +41,20 @@
 
 hr {
 	border-color: white;
+}
+
+.chooseYourWarrior {
+	font-size: 2.7em;
+}
+
+.verdanaFont {
+	font-family: Verdana;
+}
+
+.smallFont {
+	font-size: 0.9em;
+}
+
+.fftitle {
+	padding-top: 10px;
 }
