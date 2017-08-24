@@ -12,33 +12,36 @@
 		crossorigin="anonymous">
 
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
 	</head>
 
 	<body>
 
 	<br><br>
 
-	<div class="container-fluid">
+	<div class="container">
 
 
 	<div class="row">
+		<div class="col-3"></div>
+		<img src="assets/images/finalfantasytitle.png" alt="Final Fantasy" class="fftitle col-6">
+		<div class="col-3"></div>
+	</div>
 
+	<br><br>
+
+	<div class="row">
 		<div class="col-2"></div>
-
-		<div class="col-4">
-			<img src="assets/images/finalfantasytitle.png" alt="Final Fantasy" class="fftitle">
-		</div>
-
-		<div class="finalFantasyDialogBox col-4">
-			<h3 class="verdanaFont">Instructions</h3>
-			<hr>
-			<p class="verdanaFont smallFont">
-				Select any of the available fighters and then take on the others.  Choose one opponent at a time until you've defeated them all or until you've fallen victim to their might.
-			</p>
-		</div>
-
+		<div class="finalFantasyDialogBox col-8">
+				<h3 class="verdanaFont">Instructions</h3>
+				<hr>
+				<p class="verdanaFont smallFont">
+					Select any of the available fighters and then take on the others.  Choose one opponent at a time until you've defeated them all or until you've fallen victim to their might.
+				</p>
+		</div>	
 		<div class="col-2"></div>
+	</div>
+
+		
 
 	</div>
 
@@ -46,52 +49,89 @@
 		<br><br>
 
 		<div class="row">
-			<div class="col-3"></div>
-			<div class="finalFantasyDialogBox col-6">
-				<h2 class="text-center chooseYourWarrior">CHOOSE YOUR WARRIOR</h2>
+			<div class="col-2"></div>
+			<div class="finalFantasyDialogBox col-4">
+				<a href="#chooseYourWarrior" class="styledLink">
+					<h2 id="chooseYourWarrior" class="text-center">CHOOSE YOUR WARRIOR</h2></a>
 			</div>
-			<div class="col-3"></div>
+			<div class="col-1"></div>
+			<div id="stats" class="col-2 finalFantasyDialogBox">
+				<br><br><br>
+			</div>
+			<div class="col-2"></div>
 		</div>
 
-		<br>
+		<br><br>
+		<br><br>
 
 		<div class="row">
 			<div class="col-3"></div>
-			<div class="col-6">
-				<img src="assets/images/characters/terra.png">
-				<img src="assets/images/characters/yuffie.png">
-				<img src="assets/images/characters/cloud.png">
-				<img src="assets/images/characters/tidus.png">
+			<div class="col-7 characterSelections">
+				<a id="terraImage"><img src="assets/images/characters/terra.png"></a>
+				<a href="#" id="yuffieImage"><img src="assets/images/characters/yuffie.png"></a>
+				<a href="#" id="cloudImage"><img src="assets/images/characters/cloud.png"></a>
+				<a href="#" id="tidusImage"><img src="assets/images/characters/tidus.png"></a>
 			</div>
-			<div class="col-3"></div>
+			<div class="col-2"></div>
 		</div>
 
 		<br><br>
 		<br><br>
 
-		<div class="container">
-			<h2>Enemies Left To Defeat</h2>
-			<div>
-				<img src="assets/images/placeholder.jpg" id="enemy">
-				<img src="assets/images/placeholder.jpg" id="enemy">
-				<img src="assets/images/placeholder.jpg" id="enemy">
+		<div class="row">
+			<div class="col-5"></div>
+			<div class="col-2">
+				<h2 class="text-center finalFantasyDialogBox">Opponents</h2>
 			</div>
-			<br><br>
+			<div class="col-5"></div>
 		</div>
 
+		<br><br>
+		
+		<div class="row" id="opponents">
+			<div class="col-4"></div>
+			<div class="col-4">
+				<img src="assets/images/placeholder.jpg" id="enemy1">
+				<img src="assets/images/placeholder.jpg" id="enemy2">
+				<img src="assets/images/placeholder.jpg" id="enemy3">
+			</div>
+			<div class="col-4"></div>
+		</div>
 
+		<br><br>
+		<br><br>
 	
-		<div class="jumbotron">
-			<h2>The Battlefield</h2>
-			<div>
-				<img src="assets/images/placeholder.jpg" alt="" id="selectedCharacter">
-				<img src="assets/images/placeholder.jpg" alt="" id="currentEnemy">
+		<div class="jumbotron container">
+					
+			<div class="row">
+				<div class="col-5"></div>
+				<div class="col-2">
+					<h2 class="text-center finalFantasyDialogBox">The Battle</h2>
+				</div>
+				<div class="col-5"></div>
 			</div>
-			<br>
-			<div>
-				<button type="button" value="attack" class="btn btn-primary">Attack!</button>
-				<button type="button" value="defend" class="btn btn-primary">Defend</button>
-				<button type="button" value="restart" class="btn btn-danger" disabled="disabled">Restart Quest</button>
+
+		<br><br>
+
+			<div class="row">
+				<div class="col-1"></div>
+				<img class="" src="assets/images/placeholder.jpg" alt="" id="selectedCharacter">
+				<div class="col-1"></div>
+				<img src="assets/images/placeholder.jpg" alt="" id="currentEnemy">
+				<div class="col-1"></div>
+				<div class="finalFantasyDialogBox col-4">
+					<p id="currentBattleStats">Stats Go Here</p>
+				</div>
+			</div>
+			
+			<br><br>
+
+			<div class="row">
+				<div class="col-4"></div>
+				<button type="button" value="attack" class="btn btn-primary" id="attackButton">Attack!</button>
+				<div class="col-1"></div>
+				<button type="button" value="restart" class="btn btn-danger" id="restartButton">Restart</button>
+				<div class="col-4"></div>
 			</div>
 			<br><br>
 		</div>
