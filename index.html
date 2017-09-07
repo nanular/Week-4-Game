@@ -16,20 +16,26 @@
 
 	<body>
 
+	<audio src="assets/sounds/selection.mp3" id="selectionSound"></audio>
+	<audio src="assets/sounds/kill.wav" id="deathSound"></audio>
+	<audio src="assets/sounds/cursor.mp3" id="enemySelectionSound"></audio>
+
+
+
 	<br><br>
 
 	<div class="container">
 
 
 	<div class="row">
-		<div class="col-3"></div>
-		<img src="assets/images/finalfantasytitle.png" alt="Final Fantasy" class="fftitle col-6">
-		<div class="col-3"></div>
+		<div class="col"></div>
+		<img src="assets/images/finalfantasytitle.png" alt="Final Fantasy" class="fftitle col">
+		<div class="col"></div>
 	</div>
 
 	<br><br>
 
-	<div class="row">
+	<div class="row" hidden>
 		<div class="col-2"></div>
 		<div class="finalFantasyDialogBox col-8">
 				<h3 class="verdanaFont">Instructions</h3>
@@ -46,62 +52,61 @@
 	</div>
 
 		<br><br>
-		<br><br>
 
 		<div class="row">
 			<div class="col-2"></div>
 			<div class="finalFantasyDialogBox col-4">
 				<a href="#chooseYourWarrior" class="styledLink">
-					<h2 id="chooseYourWarrior" class="text-center">CHOOSE YOUR WARRIOR</h2></a>
+					<h2 id="chooseYourWarrior" class="text-center">CHOOSE A FIGHTER BELOW</h2></a>
 			</div>
 			<div class="col-1"></div>
-			<div id="stats" class="col-2 finalFantasyDialogBox">
+			<div id="stats" class="col-2 finalFantasyDialogBox text-center">
 				<br><br><br>
 			</div>
-			<div class="col-2"></div>
+			<div class="col-1"></div>
 		</div>
 
 		<br><br>
 		<br><br>
 
 		<div class="row">
-			<div class="col-3"></div>
-			<div class="col-7 characterSelections">
-				<a id="terraImage"><img src="assets/images/characters/terra.png"></a>
-				<a href="#" id="yuffieImage"><img src="assets/images/characters/yuffie.png"></a>
-				<a href="#" id="cloudImage"><img src="assets/images/characters/cloud.png"></a>
-				<a href="#" id="tidusImage"><img src="assets/images/characters/tidus.png"></a>
+			<div class="col"></div>
+			<div characterSelections">
+				<a class ="col styledLink" id="terraImage"><img src="assets/images/characters/terra.png" alt="terra"></a>
+				<a class ="col styledLink" id="yuffieImage"><img src="assets/images/characters/yuffie.png" alt="yuffie"></a>
+				<a class ="col styledLink" id="cloudImage"><img src="assets/images/characters/cloud.png" alt="cloud"></a>
+				<a class ="col styledLink" id="tidusImage"><img src="assets/images/characters/tidus.png" alt="tidus"></a>
 			</div>
-			<div class="col-2"></div>
+			<div class="col"></div>
 		</div>
 
 		<br><br>
 		<br><br>
 
 		<div class="row">
-			<div class="col-5"></div>
-			<div class="col-2">
-				<h2 class="text-center finalFantasyDialogBox">Opponents</h2>
+			<div class="col"></div>
+			<div class="col"></div>
+			<div class="col">
+				<h2 id="opponentsTitle" class="text-center finalFantasyDialogBox">Opponents</h2>
 			</div>
-			<div class="col-5"></div>
+			<div class="col"></div>
+			<div class="col"></div>
 		</div>
 
 		<br><br>
 		
-		<div class="row" id="opponents">
-			<div class="col-4"></div>
-			<div class="col-4">
-				<img src="assets/images/placeholder.jpg" id="enemy1">
-				<img src="assets/images/placeholder.jpg" id="enemy2">
-				<img src="assets/images/placeholder.jpg" id="enemy3">
+		<div class="container" id="opponents" align="center">
+			<div>
+				<a><img src="assets/images/placeholder.jpg" id="enemy1"></a>
+				<a><img src="assets/images/placeholder.jpg" id="enemy2"></a>
+				<a><img src="assets/images/placeholder.jpg" id="enemy3"></a>
 			</div>
-			<div class="col-4"></div>
 		</div>
 
 		<br><br>
 		<br><br>
 	
-		<div class="jumbotron container">
+		<div class="jumbotron container" align="center">
 					
 			<div class="row">
 				<div class="col-5"></div>
@@ -115,13 +120,17 @@
 
 			<div class="row">
 				<div class="col-1"></div>
-				<img class="" src="assets/images/placeholder.jpg" alt="" id="selectedCharacter">
+				<img src="assets/images/placeholder.jpg" alt="" id="selectedCharacter">
 				<div class="col-1"></div>
 				<img src="assets/images/placeholder.jpg" alt="" id="currentEnemy">
 				<div class="col-1"></div>
-				<div class="finalFantasyDialogBox col-4">
-					<p id="currentBattleStats">Stats Go Here</p>
+				<div class="finalFantasyDialogBox col-3 battleStats">
+					<p id="yourAttack"></p>
+					<p id="opponentAttack"></p>
+					<p id="hpLevels"></p>
+					<p id="battleMessage"></p>
 				</div>
+				<div class="col-1"></div>
 			</div>
 			
 			<br><br>
